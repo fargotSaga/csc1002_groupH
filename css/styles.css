@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #BD63B0;
+    --secondary-color: #6A69DB;
+    --text-color: #D1E5E5;
+    --background-color: #000;
+}  
 html {
     data-bs-theme: "dark";
 }
@@ -6,12 +12,14 @@ body {
     margin: 0;
     padding: 0;
 }
-:root {
-    --primary-color: #BD63B0;
-    --secondary-color: #895FBB;
-    --text-color: #D1E5E5;
-    --background-color: #000;
-}  
+nav{
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bs-body-bg);
+    border-bottom: #fff 1px solid;
+}
+
 
 .bg-primary, .btn-primary {
     background-color: var(--primary-color) !important;

@@ -1,3 +1,73 @@
-.py-5 {
+body{
+    background-color: var(--background-color) !important;
+    /* font-family: "Manrope", sans-serif; */
+}
+
+
+section{
+    margin: 3em 0;
+}
+
+
+.glow{
+    width: 95%;
+    height: 0px;
+    margin: auto;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    z-index: 1000;
+    box-shadow:
+      0 0 60px 20px #f8d1ff,  /* inner white */
+      0 0 100px 40px var(--primary-color), /* middle magenta */
+      0 0 140px 60px var(--secondary-color); /* outer cyan */
+}
+
+.font-primary {
+    color: var(--primary-color);
+}
+
+.btn-primary{
+    border: none !important;
+}
+
+.btn-primary:hover{
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.pricing-table .card, .pricing-table .card-header, .pricing-table .card-body{
     background-color: var(--background-color);
+    border: var(--bs-card-color) .1px solid;
+}
+
+.card-header{
+    color: #fff;
+    font-size: 1.4em;
+}
+
+#hero{
+    padding: 5em !important;
+    height: 100vh;
+    /* background-color: var(--background-color); */
+    align-items: center;
+    display: flex;
+    z-index: -1;
+}
+
+#slogan{
+    font-family: "Lexend Giga";
+}
+
+
+#features{
+    background-color: var(--background-color);
+    box-shadow:
+    inset 0 0 60px #fff,      /* inner white */
+    inset 20px 0 100px var(--primary-color),   /* inner left magenta short */
+    inset -20px 0 100px var(--secondary-color),  /* inner right cyan short */
+    inset 20px 0 400px var(--primary-color),  /* inner left magenta broad */
+    inset -20px 0 400px var(--secondary-color); /* inner right cyan broad */
+}
+
+#start{
+    margin-bottom: 10em;
 }
