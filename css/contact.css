@@ -17,6 +17,11 @@ main {
     width: 400px;
 }
 
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 7px rgba(var(--primary-color-rgb), 0.5);
+}
+
 button[type="submit"] {
     border: none;
     font-weight: bold;
