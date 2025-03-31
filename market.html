@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/market.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -44,77 +45,110 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <h1 class="text-center py-5 bg-primary">Market & Customers</h1>
-        <div class="row">
-            <!-- Market Overview Section -->
-            <div class="col-lg-6 mb-4">
+        <div class="p-5 bg-primary shadowed rounded text-center text-white">
+            <h1 class="fw-bold">Market & Customers</h1>
+            <hr />
+            <p>
+                The industry is experiencing steady growth, driven by increasing consumer demand and technological 
+                advancements. Market trends indicate a shift towards digital solutions, with key players investing 
+                in innovation to maintain competitive advantages. The competitive landscape includes both established 
+                companies and emerging startups, creating a dynamic and evolving market environment.
+            </p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h2 class="card-title fw-bold">Market Overview</h2>
-                        <p class="card-text">Describe your target market and market analysis here.</p>
+                        <h2 class="card-title fw-bold">Customer Segments</h2>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Market Size: [Size]</li>
-                            <li class="list-group-item">Growth Rate: [Rate]</li>
-                            <li class="list-group-item">Key Trends: [Trends]</li>
+                            <li class="list-group-item">
+                                <p>Primary Consumers (B2C) – 45%</p>
+                                <p>This segment includes young professionals who prioritize convenience, digital experiences, and brand value. They are tech-savvy and seek high-quality solutions that integrate seamlessly into their daily lives.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p>Enterprise & Government – 20%</p>
+                                <p>Large organizations and government entities need reliable, secure, and customizable solutions that comply with industry regulations. Their purchasing decisions are driven by data security, integration capabilities, and long-term reliability.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p>Business Clients (B2B) – 35%</p>
+                                <p>Small and medium-sized enterprises (SMEs) form a significant portion of our customer base. They require cost-effective, scalable solutions that support their business growth while ensuring operational efficiency.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
-            <!-- Customer Segments Section -->
-            <div class="col-lg-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h2 class="card-title fw-bold">Customer Segments</h2>
-                        <p class="card-text">Detail your primary customer segments and their characteristics.</p>
-                        <div class="mb-3">
-                            <h5>Segment 1</h5>
-                            <p>Description of customer segment 1</p>
-                        </div>
-                        <div class="mb-3">
-                            <h5>Segment 2</h5>
-                            <p>Description of customer segment 2</p>
-                        </div>
-                    </div>
+            <div class="col-lg-6">
+                <canvas id="customerChart"></canvas>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold">Why Choose Us?</h2>
+                        <hr />
+                    <ul class="custom-list">
+                        <li class="text-break">We prioritize excellence by delivering products and services that meet industry standards, ensuring reliability, efficiency, and long-term value.</li>
+                        <li class="text-break">Understanding the unique needs of our customer segments allows us to provide personalized experiences, seamless support, and solutions designed for maximum convenience.</li>
+                        <li class="text-break">We offer cost-effective solutions without compromising quality, making our services accessible to both businesses and individuals looking for scalable and budget-friendly options.</li>
+                        <li class="text-break">Our investment in research and development enables us to stay ahead of industry trends, incorporating the latest technology to enhance user experience and operational performance.</li>
+                        <li class="text-break">Backed by a growing customer base and positive industry recognition, we have established credibility and trust, making us a preferred choice in the market.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- Why Choose Us?-->
-            <div class="container">
-                <div class="row">
-                      <div class="col-12 text-center mb-5">
-                           <h2 class="fw-bold">Why Choose Us?</h2>
-                        <p class="lead text-muted">Discover why Omni-Dev is now the Number One IDE for Web Developers.</p>
-                    </div>
-                </div>
-            </div>
-
-        <!-- Customer Testimonials -->
-        <div class="row mt-4">
-            <div class="col-12">
-                <h2 class="py-5 fw-bold text-center">Customer Testimonials</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">"Omni-Dev is Amazing!"</p>
-                                <footer class="blockquote-footer">David Ratel</footer>
+        <div class="row mt-5">
+            <div class="col-12 overflow-hidden">
+                <h2 class="fw-bold text-center">Customer Testimonials</h2>
+                <hr />
+                <div class="feedback-containe">
+                    <div class="feedback-wrapper">
+                        <div class="feedback mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">"Omni-Dev is Amazing!"</p>
+                                    <footer class="blockquote-footer">David Ratel</footer>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">"Omni-Dev's AI tools are a huge help."</p>
-                                <footer class="blockquote-footer">Anna Hughe</footer>
+                        <div class="feedback mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">"Omni-Dev's AI tools are a huge help."</p>
+                                    <footer class="blockquote-footer">Anna Hughe</footer>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">"Working as a team has never been easier."</p>
-                                <footer class="blockquote-footer">James Bride</footer>
+                        <div class="feedback mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">"Working as a team has never been easier."</p>
+                                    <footer class="blockquote-footer">James Bride</footer>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Copy elements -->
+                        <div class="feedback mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">"Omni-Dev is Amazing!"</p>
+                                    <footer class="blockquote-footer">David Ratel</footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">"Omni-Dev's AI tools are a huge help."</p>
+                                    <footer class="blockquote-footer">Anna Hughe</footer>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">"Working as a team has never been easier."</p>
+                                    <footer class="blockquote-footer">James Bride</footer>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,6 +166,11 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Chart.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/customerChart.js"></script>
 </body>
 </html>
 

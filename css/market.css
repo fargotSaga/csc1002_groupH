@@ -1,0 +1,62 @@
+.shadowed {
+    box-shadow: 0 0 3px 5px rgba(var(--primary-color-rgb), .3);
+}
+
+.custom-list {
+    --icon-space: 1.3em;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    text-align: left;
+}
+
+.custom-list li {
+    padding-left: calc(var(--icon-space) * 1.3);
+    padding-bottom: 15px;
+}
+
+.custom-list li::before {
+    content: '\f14a';
+    color: var(--primary-color);
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+}
+
+.feedback-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-wrapper {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+
+.feedback-wrapper:hover {
+    animation-play-state: paused;
+}
+
+.feedback {
+    min-width: 350px;
+}
+
+.feedback .card {
+    transition: .3s;
+}
+
+.feedback:hover .card {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .5);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
