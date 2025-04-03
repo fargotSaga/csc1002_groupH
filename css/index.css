@@ -1,6 +1,5 @@
 body{
     background-color: var(--background-color) !important;
-    /* font-family: "Manrope", sans-serif; */
 }
 
 
@@ -48,11 +47,16 @@ section{
 #features{
     background-color: var(--background-color);
     box-shadow:
-    inset 0 0 60px #fff,      /* inner white */
-    inset 20px 0 100px var(--primary-color),   /* inner left magenta short */
-    inset -20px 0 100px var(--secondary-color),  /* inner right cyan short */
-    inset 20px 0 400px var(--primary-color),  /* inner left magenta broad */
-    inset -20px 0 400px var(--secondary-color); /* inner right cyan broad */
+    inset 0 0 60px #f8d1ff,      /* inner white */
+    inset 0px 0 100px var(--primary-color),   /* inner left magenta short */
+    inset 0px 0 100px var(--secondary-color),  /* inner right cyan short */
+    inset 0px 0 400px var(--primary-color),  /* inner left magenta broad */
+    inset 0px 0 400px var(--secondary-color), /* inner right cyan broad */
+    0 0 100px #f8d1ff,      /* inner white */
+    0 0 100px var(--primary-color),   /* inner left magenta short */
+    0 0 100px var(--secondary-color),  /* inner right cyan short */
+    0 0 140px var(--primary-color),  /* inner left magenta broad */
+    0 0 140px var(--secondary-color); /* inner right cyan broad */
 }
 
 #start{
