@@ -60,3 +60,7 @@
         transform: translateX(-50%);
     }
 }
+body{
+    background-color: var(--background-color) !important;
+    /* font-family: "Manrope", sans-serif; */
+}
