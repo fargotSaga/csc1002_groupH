@@ -25,3 +25,16 @@ nav{
 .bg-primary, .btn-primary {
     background-color: var(--primary-color) !important;
 }
+
+.glow{
+    width: 95%;
+    height: 0px;
+    margin: auto;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    z-index: 1000;
+    box-shadow:
+      0 0 60px 20px #f8d1ff,  /* inner white */
+      0 0 100px 40px var(--primary-color), /* middle magenta */
+      0 0 140px 60px var(--secondary-color); /* outer cyan */
+}
