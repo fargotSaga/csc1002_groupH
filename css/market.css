@@ -60,3 +60,12 @@
         transform: translateX(-50%);
     }
 }
+
+.shadowed{
+    box-shadow: 0 0 3px 5px rgba(var(--primary-color), .3);
+}
+
+body{
+    background-color: var(--background-color) !important;
+    /* font-family: "Manrope", sans-serif; */
+}

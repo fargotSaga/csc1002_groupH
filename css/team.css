@@ -1,0 +1,191 @@
+/* Importing Google Fonts */
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1e1e1e;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #0d6efd;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+/* Set the background image for the body */
+body {
+    background-image: url('https://wallpaperaccess.com/full/1288357.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove margin */
+}
+/* Team Cards */
+.card {
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+    
+.card:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 16px 32px rgba(0, 255, 136, 0.7);
+}
+/* Page glow effect */
+body {
+    transition: box-shadow 0.3s ease;
+}
+body {
+    transition: box-shadow 0.3s ease;
+}
+/* Center the title and subtitle inside the card */
+.card-body {
+    text-align: center; /* Centers all the text inside the card */
+    padding: 20px;
+}
+
+/* Style the card title (h5) */
+.card .card-title {
+    font-family: 'Manrope', sans-serif; /* Unique font for the title */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: 600; /* Make title bold */
+    color: #00ff88; /* Green color for uniqueness */
+    margin-bottom: 15px; /* Space below the title */
+    text-transform: uppercase; /* Make the title uppercase */
+}
+
+/* Style the card subtitle (p) */
+.card .card-subtitle {
+    font-family: 'Lexend', sans-serif; /* Unique font for the subtitle */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 500; /* Lighter font weight */
+    color: rgba(241, 18, 18, 0.8); /* Light white with opacity */
+    margin-bottom: 10px; /* Space below the subtitle */
+    letter-spacing: 0.5px; /* Add a little letter-spacing for style */
+}
+
+/* Add additional hover effects for the card title */
+.card:hover .card-title {
+    color: #00e5ff; /* Change the title color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Add additional hover effects for the card subtitle */
+.card:hover .card-subtitle {
+    color: rgba(0, 255, 136, 1); /* Change the subtitle color on hover */
+}
+
+
+/* Glow when card is hovered */
+.card:hover ~ body {
+    box-shadow: 0 0 40px rgba(0, 255, 136, 0.7); /* Green glow around the page */
+}
+
+/* Optional: Remove body glow when no card is hovered */
+body:not(:has(:hover)) {
+    box-shadow: none;
+}
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.card-subtitle {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #d0d0d0;
+}
+
+/* Section Titles */
+section h2 {
+    border-left: 4px solid #0d6efd;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal .modal-content {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal.show {
+    opacity: 1;
+}

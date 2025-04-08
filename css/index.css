@@ -1,6 +1,5 @@
 body{
     background-color: var(--background-color) !important;
-    /* font-family: "Manrope", sans-serif; */
 }
 
 
@@ -26,6 +25,24 @@ section{
     border: var(--bs-card-color) .1px solid;
 }
 
+.price{
+    max-height: 5rem !important;
+    margin-bottom: 1rem;
+}
+
+.col-lg-8{
+    width: 85% !important;
+}
+
+#features .card{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#features .card:hover{
+    transform: translateY(-8px);
+}
+
+
 .card-header{
     color: #fff;
     font-size: 1.4em;
@@ -47,12 +64,20 @@ section{
 
 #features{
     background-color: var(--background-color);
+    margin: 5em 0;
+    padding: 6em !important;
+    border-radius: 5%;
     box-shadow:
-    inset 0 0 60px #fff,      /* inner white */
-    inset 20px 0 100px var(--primary-color),   /* inner left magenta short */
-    inset -20px 0 100px var(--secondary-color),  /* inner right cyan short */
+    inset 0 0 50px var(--text-color),      /* inner white */
+    inset 20px 0 80px var(--primary-color),   /* inner left magenta short */
+    inset -20px 0 80px var(--secondary-color),  /* inner right cyan short */
     inset 20px 0 400px var(--primary-color),  /* inner left magenta broad */
-    inset -20px 0 400px var(--secondary-color); /* inner right cyan broad */
+    inset -20px 0 400px var(--secondary-color), /* inner right cyan broad */
+    0 0 50px var(--text-color),            /* outer white */
+    -10px 0 80px var(--primary-color),        /* outer left magenta */
+    10px 0 80px var(--secondary-color);         /* outer right cyan */
+     
+
 }
 
 #start{
