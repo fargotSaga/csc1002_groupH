@@ -10,6 +10,14 @@
     <link href="css/styles.css" rel="stylesheet"> 
     <link href="css/financial.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- AOS (Animate on Scroll) CSS & JS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+
 </head>
 <body>
     <!-- Navigation -->
@@ -63,25 +71,11 @@
             </div>
         </div>
         
-        <div class="mt-4">
-            <div class="card shadow-lg border-0 rounded-4">
-                <div class="card-body">
-                    <h3 class="text-center card-title">Funding Sources</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><strong>Angel Investors & Venture Capital:</strong> Seeking €100,000 to accelerate platform development and market reach.</li>
-                        <li class="list-group-item"><strong>Government Grants:</strong> Exploring opportunities for tech startup support.</li>
-                        <li class="list-group-item"><strong>Pre-Sales Strategy:</strong> Offering discounted pre-orders to secure early adopters.</li>
-                    </ul>
-                    <p class="mt-3 text-center">For a detailed breakdown of expected costs, visit <a href="https://www.canva.com/design/DAGiQqRn8ts/6QT2IYHTfJaB0B8WsG83Og/edit" target="_blank">this link</a>.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-            <!-- Financial Reports -->
+        <!-- Financial Reports -->
+        <div class="mt-5">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="mb-4">Financial Reports</h2>
+                    <h2 class="mb-4 text-center card-title">Financial Reports</h2>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
@@ -93,33 +87,36 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Annual Costs Report</td>
+                                    <td>Expected Costs</td>
                                     <td>2024</td>
-                                    <td><a href="#" class="btn btn-sm btn-primary">Download</a></td>
+                                    <td><a href="images/expected_costs.png" class="btn btn-sm btn-primary">Download</a></td>
                                 </tr>
                                 <tr>
-                                    <td>Revenue Report</td>
+                                    <td>Annual Revenue</td>
                                     <td>2024</td>
-                                    <td><a href="#" class="btn btn-sm btn-primary">Download</a></td>
+                                    <td><a href="images/revenue.pdf" class="btn btn-sm btn-primary">Download</a></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
+        </div>
 
-    
-        <!-- Total Revenue Chart Placeholder -->
-        <div class="row mt-5">
-            <div class="col-lg-12 text-center">
-                <h2 class="mb-4 card-title">Total Revenue Breakdown</h2>
-                <img src="images/Graph.png" alt="Total Revenue Pie Chart" class="img-fluid" id="revenueChart">
-            </div>
+        <div class="mt-5 text-center">
+            <h3 class="text-white mb-3">Total Revenue by Month 12</h3>
+            <canvas id="revenuePieChart" style="max-width: 400px; margin: 0 auto;"></canvas>
         </div>
     </main>
 
+            
+
+
+
+
+
     <!-- Footer -->
-    <footer class="bg-light py-4 mt-5">
+    <footer class="bg-dark py-4 mt-5">
         <div class="container">
             <p class="text-center mb-0">&copy; 2025 OmniDev. All rights reserved.</p>
         </div>
@@ -127,6 +124,7 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Link to your custom JavaScript file -->
     <script src="js/financial.js"></script>

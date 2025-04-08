@@ -1,15 +1,40 @@
-const revenueChart = document.getElementById('revenueChart');
+document.addEventListener("DOMContentLoaded", function () {
+    const ctx = document.getElementById("revenuePieChart").getContext("2d");
 
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Add the class to trigger the animation
-            entry.target.classList.add('chart-visible');
-            observer.unobserve(entry.target); // Stop observing after animation is triggered
-        }
+    new Chart(ctx, {
+        type: "pie",
+        data: {
+            labels: ["Subscription Revenue", "Affiliate Revenue", "AI features"],
+            datasets: [{
+                data: [62, 21, 17],
+                backgroundColor: ["#88d8d4", "#1f2d36", "#ecc76d"],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: "#fff",
+                        font: {
+                            size: 14
+                        }
+                    }
+                },
+                datalabels: {
+                    color: '#fff',
+                    font: {
+                        weight: 'bold',
+                        size: 16
+                    },
+                    formatter: (value) => `${value}%`
+                },
+                title: {
+                    display: false
+                }
+            }
+        },
+        plugins: [ChartDataLabels]
     });
-}, {
-    threshold: 0.5 // Trigger the animation when 50% of the chart is visible
 });
-
-observer.observe(revenueChart);

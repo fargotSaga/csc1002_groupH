@@ -1,6 +1,15 @@
 /* General Styles */
 
 /* Card Design */
+
+/* h1 */
+h1 {
+    background: linear-gradient(to right, #ff69b4, #8a2be2); /* Pink to Purple */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
 .card {
     background-color: #1c1c1c;
     border: none;
@@ -15,8 +24,10 @@
 
 .card-title {
     font-size: 1.5rem;
-    border-bottom: 2px solid #555;
     padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, #ff69b4, #c084fc);
+    border-image-slice: 1;
 }
 
 /* Funding Sources */
@@ -29,7 +40,7 @@
 }
 
 .list-group-item strong {
-    color: #fca311;
+    color: #ff69b4; /* Bright pink */
 }
 
 /* Financial Reports Table */
@@ -62,7 +73,7 @@
 #revenueChart {
     display: block;
     margin: 0 auto;
-    max-width: 50%;  /* Default size */
+    max-width: 0.1%;  /* Default size */
     height: auto;
     transition: max-width 0.5s ease-in-out, transform 0.5s ease-in-out;  /* Smooth effect */
 }
@@ -76,7 +87,7 @@
 
 /* Scale up slightly when in viewport */
 #revenueChart.scrolled {
-    max-width: 60%;  /* Increase size smoothly */
+    max-width: 50%;  /* Increase size smoothly */
     transform: scale(1.1);
 }
 
@@ -88,7 +99,7 @@
 #revenueChart {
     display: block;         /* Ensures it's treated as a block element */
     margin: 0 auto;         /* Centers it horizontally */
-    max-width: 60%;         /* Adjust size (increase if needed) */
+    max-width: 50%;         /* Adjust size (increase if needed) */
     height: auto;  
     opacity: 0;
     transition: opacity 1s ease-in-out;         /* Keeps the aspect ratio */
