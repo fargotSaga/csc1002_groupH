@@ -28,7 +28,7 @@ h1, h2 {
 }
 /* Set the background image for the body */
 body {
-    background-image: url('https://wallpaperaccess.com/full/1288357.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/previews/002/234/632/non_2x/abstract-purple-metallic-arrow-shadow-geometric-direction-on-black-circle-mesh-with-banner-blank-space-design-modern-futuristic-technology-background-illustration-vector.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
@@ -36,6 +36,14 @@ body {
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove margin */
 }
+.card-img-top {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
 /* Team Cards */
 .card {
     background-color: #1f1f1f;
@@ -47,7 +55,7 @@ body {
     
 .card:hover {
     transform: scale(1.03) translateY(-5px);
-    box-shadow: 0 16px 32px rgba(0, 255, 136, 0.7);
+    box-shadow: 0 16px 32px rgba(119, 0, 255, 0.7);
 }
 /* Page glow effect */
 body {
@@ -67,7 +75,7 @@ body {
     font-family: 'Manrope', sans-serif; /* Unique font for the title */
     font-size: 1.5rem; /* Adjust font size */
     font-weight: 600; /* Make title bold */
-    color: #00ff88; /* Green color for uniqueness */
+    color: #7504f7; /* Green color for uniqueness */
     margin-bottom: 15px; /* Space below the title */
     text-transform: uppercase; /* Make the title uppercase */
 }
