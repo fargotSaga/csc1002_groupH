@@ -26,6 +26,7 @@ h3 {
 }
 
 .introduction{
+    margin-top: 50px;
     height: 100vh;
 }
 
@@ -187,4 +188,17 @@ h3 {
     margin-top: 5px;
     margin-bottom: 5px;
 
+}
+
+.feature-card-tooltip{
+    color: #ADB5BD;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-style: dashed;
+    text-underline-offset: 10px;
+}
+
+.feature-card-tooltip:active{
+    text-decoration: none;
+    background-color: beige;
 }
